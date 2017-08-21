@@ -2,8 +2,8 @@ import Vue from 'vue';
 import _ from 'lodash';
 import { anotherFunction, hello } from './functions.js';
 
-import './css/style.css';
-import Metal from './img/metal.jpg'
+import '../css/style.css';
+import Metal from '../img/metal.jpg'
 
 //import without from 'lodash/without';
 

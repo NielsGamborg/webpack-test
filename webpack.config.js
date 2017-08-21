@@ -7,12 +7,12 @@ module.exports = {
         contentBase: './dist'
     },
     entry: {
-        app: './src/index.js',
-        functions: './src/functions.js'
+        app: './src/js/index.js',
+        functions: './src/js/functions.js'
     },
     output: {
         //filename: 'bundle.js',
-        filename: '[name].bundle.js',
+        filename: './js/[name].bundle.js',
         path: path.resolve(__dirname, 'dist')
     },
     resolve: {
