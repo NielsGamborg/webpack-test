@@ -3,6 +3,7 @@ import _ from 'lodash';
 import { anotherFunction, hello } from './functions.js';
 
 import '../css/style.css';
+import '../css/style2.css';
 import Metal from '../img/metal.jpg'
 
 //import without from 'lodash/without';
@@ -31,15 +32,12 @@ Vue.component('some-box', {
     </div>`,
     data: function() {
         return {
-            someInput: ''
+            someInput: '42'
         }
-    },
-    created: function() {
-        console.log('created')
     },
     methods: {
         gogo: function(param) {
-            alert(param)
+            console.log('Go: ', param);
         }
     }
 })
@@ -84,4 +82,4 @@ function test() {
 
 test();
 anotherFunction('Yeah');
-hello('Jens Hansen');
+hello('my friend');
