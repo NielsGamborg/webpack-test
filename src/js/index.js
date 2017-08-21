@@ -1,10 +1,10 @@
 import Vue from 'vue';
 import _ from 'lodash';
-import { anotherFunction, hello } from './functions.js';
+import { hello, test, anotherFunction } from './functions.js';
 
 import '../css/style.css';
 import '../css/style2.css';
-import Metal from '../img/metal.jpg'
+
 
 //import without from 'lodash/without';
 
@@ -59,26 +59,6 @@ var app = new Vue({
         this.testFunction();
     }
 });
-
-
-
-
-
-
-function test() {
-    var myArray = [1, 2, 3, 5, 7, 11, 13]
-    var myArrayFiltered = _.without(myArray, 1, 2);
-    console.log('myArray: ', myArray);
-    console.log('myArrayFiltered: ', myArrayFiltered);
-
-
-    var myImage = new Image();
-    myImage.src = Metal;
-    myImage.height = 150;
-
-    document.getElementById('image').appendChild(myImage);
-
-}
 
 test();
 anotherFunction('Yeah');
