@@ -13,8 +13,14 @@ Vue.component('some-box', {
     template: `
     <div id="ox">
         <h3>Go</h3>
-        <input id="query" type="text" v-model="someInput" autofocus> 
-        <button id="searchButton" v-on:click="gogo(someInput)">Go</button>
+        <p>
+            <input id="query" type="text" v-model="someInput" autofocus> 
+            <button id="searchButton" v-on:click="go(someInput)">Go</button>
+        </p>
+        <p>
+            <button id="searchButton" v-on:click="gogo(someInput)">Dice</button>
+            {{ dice }}
+        </p>
         <div id="ontainer">
             <div class="left">
                 <p>Array</p>
@@ -32,12 +38,16 @@ Vue.component('some-box', {
     </div>`,
     data: function() {
         return {
-            someInput: '42'
+            someInput: '42',
+            dice: ''
         }
     },
     methods: {
         gogo: function(param) {
-            console.log('Go: ', param);
+            this.dice = Math.floor(Math.random() * 6 + 1);
+        },
+        go: function(param) {
+            console.log(param);
         }
     }
 })
