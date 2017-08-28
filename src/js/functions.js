@@ -25,5 +25,9 @@ function anotherFunction(param) {
     console.log('Message from external module ' + param)
 }
 
+function parrot() {
+    console.log('Hello Hello Hello');
+}
 
-export { hello, test, anotherFunction }
+
+export { hello, test, anotherFunction, parrot }
