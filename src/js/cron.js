@@ -1,7 +1,7 @@
 let cron = require('node-cron');
 import { parrot } from './functions.js'
 
-let secondlyCron = '* * * * * *';
+let secondlyCron = '*/5 * * * * *';
 let minutelyCron = '* * * * *';
 let dailyCron = '0 17 8 * * *';
 let weeklyCron = '0 48 7 * * 7';

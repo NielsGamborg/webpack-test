@@ -26,7 +26,10 @@ function anotherFunction(param) {
 }
 
 function parrot() {
-    console.log('Hello Hello Hello');
+    let date = new Date();
+    let seconds = date.getSeconds();
+    let minutes = date.getMinutes();
+    console.log('Hello Hello Hello', minutes);
 }
 
 
