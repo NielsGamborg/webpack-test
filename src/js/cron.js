@@ -5,7 +5,7 @@ let secondlyCron = '*/5 * * * * *';
 let minutelyCron = '* * * * *';
 let dailyCron = '0 17 8 * * *';
 let weeklyCron = '0 48 7 * * 7';
-//let monthlyCron = '0 48 7 * 1 *';
+let monthlyCron = '0 48 7 * 1 *';
 
 
 /* Validate that the given string is a valid cron expression. */
